@@ -1,0 +1,54 @@
+/***Text Properties***/
+
+html *{
+    
+    font-family:Arial, Helvetica, sans-serif !important;
+}
+
+/*Headers*/
+
+h1 {
+color: orange;
+text-shadow: 1px 1px 2px black;
+font-style: italic;
+font-size: 35pt !important;
+}
+
+h2::first-letter{
+    font-size: 50pt !important;
+}
+
+/*Nav*/
+
+nav ul li a{
+    color: orange;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: green;
+}
+
+nav ul li a:visited{
+    color: orange;
+}
+
+li{
+    margin: 5px;
+}
+
+/*Footer*/
+
+footer{
+    text-align: center;
+    font-size:smaller;
+}
+
+
+/***Image Properties***/
+
+img{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
