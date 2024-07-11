@@ -1,0 +1,26 @@
+
+/* Html */
+html{
+    font-family: "Roboto", sans-serif;
+    background: #e6ecea;
+}
+
+/* Footer */
+ footer{
+    background: #06a481;
+    width: 100%;
+    padding: 25px, 30px;
+ }
+
+footer li{
+    display: inline;
+}
+
+footer div{
+    font: white;
+}
+
+ footer img{
+    width: 25px;
+    length: 25px;
+ }
