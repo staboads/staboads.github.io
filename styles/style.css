@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    color: #134542;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 header{
@@ -79,6 +80,9 @@ header img {
 .footer-column ul li a:hover {
     text-decoration: underline;
 }
+.footer-column ul li img {
+    width: 9%;
+}
 .social-icons ul {
    list-style-type: none;
    justify-items: right;
@@ -88,11 +92,38 @@ header img {
     margin-right: 5%;
 }
 .social-icons ul li img {
-    width: 9%;
+    width: 12%;
 }
 .footer-bottom {
-    margin-left: 40%;
+    text-align: center;
 }
-
-
-
+#cookieConsent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #134542;
+    color: white;
+    width: 75%;
+    max-width: 450px;
+    padding: 1rem;
+    border-radius: 7px;
+    display: none;
+    box-shadow: 3px 4px black;
+}
+#cookieConsent button {
+    background-color:#20c7ad;
+    color: #e6ecea;
+    border: none;
+    padding: 15px;
+    font-size: large;
+    font-weight: bold;
+    width: 40%;
+    outline: 0;
+    margin-top: 50px;
+    box-shadow: 0 3px 3px black;
+    cursor: pointer;
+}
+#cookieConsent button:hover {
+    background-color: #134542;
+}

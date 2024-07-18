@@ -39,7 +39,6 @@ footer {
     background-color: #20c7ad;
     padding: 0.0%;
     border: 2px solid black;
-    text-align: center;
 }
 nav ul li a:hover {
     color: #20c7ad;
@@ -89,11 +88,12 @@ header img {
     margin-right: 5%;
 }
 .social-icons ul li img {
-    width: 9%;
+    width: 12%;
 }
 .footer-bottom {
-    margin-left: 40%;
+    text-align: center;
 }
+
 
 
 
