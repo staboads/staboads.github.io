@@ -10,6 +10,15 @@ header{
     justify-content: space-between;
 
 }
+
+section{
+    display: flex;
+}
+
+section p{
+    width: 600px;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0%;
@@ -47,9 +56,15 @@ header img {
     width: 7%;
     float: left;
 }
+
+.blurb{
+    padding: 20px;
+}
+
 .contact {
     color: #20c7ad;
 }
+
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -91,6 +106,48 @@ header img {
 }
 
 
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
 
+h2 {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+button:hover {
+    background-color: #20c7ad;
+}
+input, textarea {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}#successMessage {
+    margin-top: 20px;
+    text-align: center;
+    color: #20c7ad;
+}
+.hidden {
+    display: none;
+}
+
+button {
+    width: 40%;
+    padding: 10px;
+    background-color: #134542;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
 
 
