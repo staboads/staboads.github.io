@@ -17,13 +17,52 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
-    <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="styles/associates.css" type="text/css" />
     <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
   </head>
   <body>
     <nav-bar-comp currentpage="associates"></nav-bar-comp>
-    <p>Place holder text.</p>
+    <main>
+      <section class="gallery">
+        <h1>Out partners</h1>
+        <div id="image-grid" class="image-grid"></div>
+      </section>
+    </main>
   </body>
 
   <footer-comp></footer-comp>
+
+  <script>
+    function loadImages() {
+      const images = [
+        "adobe.svg",
+        "airbnb.svg",
+        "apple.svg",
+        "bmw.svg",
+        "byte.svg",
+        "creative-cloud.svg",
+        "ethereum.svg",
+        "facebook.svg",
+        "forbes.svg",
+        "google.svg",
+        "mcdonald.svg",
+        "nashville.svg",
+        "silver.svg",
+        "soundcloud.svg",
+        "twitter.svg",
+      ];
+
+      const gallery = document.getElementById("image-grid");
+      images.forEach((image) => {
+        const img = document.createElement("img");
+        img.src = `images/associates/${image}`;
+        img.alt = "Image";
+        img.className = "company-image";
+        gallery.appendChild(img);
+      });
+    }
+
+    // Chamar a função quando a página carrega
+    window.onload = loadImages;
+  </script>
 </html>
