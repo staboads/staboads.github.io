@@ -8,6 +8,8 @@
     <meta name="keywords" content="HTML, CSS, Web Design" />
     <meta name="description" content="Home Page " />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/footer.js"></script>
+    <script src="js/nav-bar.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,116 +21,9 @@
     <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
   </head>
   <body>
-    <header>
-      <div class="header container">
-        <div class="logo-container">
-          <img src="images/Logo/transparentlogo.png" alt="EMERALD logo " />
-          <h1>EMERALD GROUP</h1>
-        </div>
-
-        <nav>
-          <ul>
-            <li><a href="home.html">Home Page</a></li>
-            <li><a href="about.html">About us </a></li>
-            <li>
-              <a href="associates.html">Associated Companies</a>
-            </li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li><a href="featured-artist.html">Featured Artist</a></li>
-            <li><a href="faq.html" class="selected">FAQ</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <nav-bar-comp currentpage="faq"></nav-bar-comp>
     <p>Place holder text.</p>
   </body>
 
-  <footer>
-    <div class="footer-container">
-      <div class="footer-column">
-        <h4>About Us</h4>
-        <p>
-          Emerald Group is an established and leading figure in entertainment
-          for the past 20 years. We are always looking to represent new talent,
-          and have offices located all over the world. We are passionate about
-          enrichung cultures worldwide through music, Film, Tv, and more.
-        </p>
-      </div>
-      <div class="footer-column">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="associates.html">Our Associates</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="faq.html">F.A.Q</a></li>
-          <li><a href="featured-artist.html">Featured Artists</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h4>Contact Us</h4>
-        <p>Email: info@emeraldgroup.com</p>
-        <p>Phone: +123 456 7890</p>
-      </div>
-      <div class="footer-column">
-        <h4>Social Media</h4>
-        <div class="social-icons">
-          <ul>
-            <li>
-              <a href="https://twitter.com/EmeraldGroup"
-                ><img
-                  id="X"
-                  src="/images/Social Media Logos/twitterx.png"
-                  alt="twitter link"
-              /></a>
-            </li>
-            <li>
-              <a href="https://instagram.com/EmeraldGroup"
-                ><img
-                  id="Instagram"
-                  src="/images/Social Media Logos/insta.png"
-                  alt="instagram link"
-              /></a>
-            </li>
-            <li>
-              <a href="https://facebook.com/EmeraldGroup"
-                ><img
-                  id="Facebook"
-                  src="/images/Social Media Logos/facebook.png"
-                  alt="facebook link"
-              /></a>
-            </li>
-            <li>
-              <a href="https://youtube.com/EmeraldGroup"
-                ><img
-                  id="Youtube"
-                  src="/images/Social Media Logos/youtube.png"
-                  alt="YouTube link"
-              /></a>
-            </li>
-            <li>
-              <a href="https://tiktok.com/EmeraldGroup"
-                ><img
-                  id="TikTok"
-                  src="/images/Social Media Logos/tiktok.png"
-                  alt="TikTok link"
-              /></a>
-            </li>
-            <li>
-              <a href="https://linkedin.com/EmeraldGroup"
-                ><img
-                  id="LinkedIn"
-                  src="/images/Social Media Logos/linkedin.png"
-                  alt="LinkedIn link"
-              /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 EMERALD GROUP. All rights reserved.</p>
-    </div>
-  </footer>
+  <footer-comp></footer-comp>
 </html>

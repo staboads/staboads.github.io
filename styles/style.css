@@ -110,3 +110,34 @@ header > .container {
   align-items: center;
   gap: 12px;
 }
+
+#cookieConsent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #134542;
+  color: white;
+  width: 75%;
+  max-width: 450px;
+  padding: 1rem;
+  border-radius: 7px;
+  display: none;
+  box-shadow: 3px 4px black;
+}
+#cookieConsent button {
+  background-color: #20c7ad;
+  color: #e6ecea;
+  border: none;
+  padding: 15px;
+  font-size: large;
+  font-weight: bold;
+  width: 40%;
+  outline: 0;
+  margin-top: 50px;
+  box-shadow: 0 3px 3px black;
+  cursor: pointer;
+}
+#cookieConsent button:hover {
+  background-color: #134542;
+}
