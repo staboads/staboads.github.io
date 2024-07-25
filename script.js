@@ -1,53 +1,36 @@
-document
-  .getElementById("contactForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-    alert("Thank you for contacting us!");
-  });
-let cookieconsent = document.getElementById("cookieConsent");
+document.addEventListener("DOMContentLoaded", function () {
+  const questions = document.querySelectorAll(".question");
 
-function showcookie() {
-  setTimeout(() => {
-    cookieconsent.style.display = "block";
-  }, 3000);
-}
-function closecookie() {
-  cookieconsent.style.display = "none";
-}
-document
-  .getElementById("show-signup")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    document.getElementById("login-form").classList.add("hidden");
-    document.getElementById("signup-form").classList.remove("hidden");
-  });
+  questions.forEach((question) => {
+    question.addEventListener("click", function () {
+      const answer = this.nextElementSibling;
+      const currentlyVisible = answer.style.display === "block";
 
-document
-  .getElementById("show-login")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    document.getElementById("signup-form").classList.add("hidden");
-    document.getElementById("login-form").classList.remove("hidden");
-  });
+      // Hide all answers
+      document
+        .querySelectorAll(".answer")
+        .forEach((a) => (a.style.display = "none"));
 
-  document.getElementById('signup-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    const username = document.getElementById('username').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('confirm-password').value;
-    
-    if (password !== confirmPassword) {
-        alert('Passwords do not match!');
-        return;
-    }
-    
-    alert('Sign up successful!');
-    // Here you can add code to handle the form submission, like sending the data to your server
+      // Toggle the clicked answer
+      answer.style.display = currentlyVisible ? "none" : "block";
+    });
+  });
 });
-document.getElementById('login-signup-button').addEventListener('click', function() {
-  window.location.href = 'login-signup.html';
+document.addEventListener("DOMContentLoaded", function () {
+  const titles = document.querySelectorAll(".policy-title");
+
+  titles.forEach((title) => {
+    title.addEventListener("click", function () {
+      const content = this.nextElementSibling;
+      const currentlyVisible = content.style.display === "block";
+
+      // Hide all contents
+      document
+        .querySelectorAll(".policy-content")
+        .forEach((c) => (c.style.display = "none"));
+
+      // Toggle the clicked content
+      content.style.display = currentlyVisible ? "none" : "block";
+    });
+  });
 });
-
-

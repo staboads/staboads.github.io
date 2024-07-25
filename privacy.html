@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy - Emerald Group</title>
     <link rel="stylesheet" href="styles/privacy.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -27,54 +35,88 @@
       </div>
     </header>
     <main>
-      <section>
-        <h2>Introduction</h2>
-        <p>
-          Welcome to Emerald Group. We are committed to protecting your personal
-          information and your right to privacy. If you have any questions or
-          concerns about our policy, or our practices with regards to your
-          personal information, please contact us at info@emeraldgroup.com.
-        </p>
-      </section>
-      <section>
-        <h2>Information We Collect</h2>
-        <p>
-          We collect personal information that you voluntarily provide to us
-          when you register on the website, express an interest in obtaining
-          information about us or our products and services, when you
-          participate in activities on the website or otherwise when you contact
-          us.
-        </p>
-      </section>
-      <section>
-        <h2>How We Use Your Information</h2>
-        <p>
-          We use personal information collected via our website for a variety of
-          business purposes described below. We process your personal
-          information for these purposes in reliance on our legitimate business
-          interests, in order to enter into or perform a contract with you, with
-          your consent, and/or for compliance with our legal obligations.
-        </p>
-      </section>
-      <section>
-        <h2>Sharing Your Information</h2>
-        <p>
-          We only share information with your consent, to comply with laws, to
-          provide you with services, to protect your rights, or to fulfill
-          business obligations.
-        </p>
-      </section>
-      <section>
-        <h2>Contact Us</h2>
-        <p>
-          If you have questions or comments about this policy, you may email us
-          at <a href="info@emeraldgroup.com">info@emeraldgroup.com</a> or by
-          post to:
-        </p>
-        <p>
-          Emerald Group<br />123 Talent Management Ave<br />Toronto, ON, Canada
-        </p>
-      </section>
+      <div class="container my-5">
+        <section class="privacy-policy">
+          <div class="policy-item">
+            <h2 class="policy-title">
+              <i class="fas fa-lock"></i> Introduction
+            </h2>
+            <p class="policy-content">
+              Welcome to our Talent Management Agency. We are committed to
+              protecting your personal data and respecting your privacy. Welcome
+              to Emer If you have any questions or concerns about our policy, or
+              our practices with regards to your personal information, please
+              contact us at
+              <a href="About.html">info@emeraldgroup.com.</a>
+            </p>
+          </div>
+          <div class="policy-item">
+            <h2 class="policy-title">
+              <i class="fas fa-user-shield"></i> What Data We Collect
+            </h2>
+            <p class="policy-content">
+              We collect personal information that you voluntarily provide to us
+              when you register on the website, express an interest in obtaining
+              information about us or our products and services, when you
+              participate in activities on the website or otherwise when you
+              contact us.
+            </p>
+          </div>
+          <div class="policy-item">
+            <h2 class="policy-title">
+              <i class="fas fa-database"></i> How We Use Your Data
+            </h2>
+            <p class="policy-content">
+              We use personal information collected via our website for a
+              variety of business purposes described below. We process your
+              personal information for these purposes in reliance on our
+              legitimate business interests, in order to enter into or perform a
+              contract with you, with your consent, and/or for compliance with
+              our legal obligations.
+            </p>
+          </div>
+          <div class="policy-item">
+            <h2 class="policy-title">
+              <i class="fas fa-share-alt"></i> Sharing Your Data
+            </h2>
+            <p class="policy-content">
+              We do not sell or trade your personal information. We may share
+              data with trusted third parties to assist us in operating our
+              website and conducting our business. We only share information
+              with your consent, to comply with laws, to provide you with
+              services, to protect your rights, or to fulfill business
+              obligations.
+            </p>
+          </div>
+          <div class="policy-item">
+            <h2 class="policy-title">
+              <i class="fas fa-user-secret"></i> Your Privacy Rights
+            </h2>
+            <p class="policy-content">
+              You have the right to access, correct, or delete your personal
+              information. Contact us if you have any concerns about your data.
+            </p>
+          </div>
+          <div class="policy-item">
+            <h2 class="policy-title">
+              <i class="fas fa-shield-alt"></i> Security Measures
+            </h2>
+            <p class="policy-content">
+              We implement a variety of security measures to maintain the safety
+              of your personal information.
+            </p>
+          </div>
+          <div class="policy-item">
+            <h2 class="policy-title">
+              <i class="fas fa-clipboard-list"></i> Changes to This Policy
+            </h2>
+            <p class="policy-content">
+              We may update our privacy policy from time to time. We will notify
+              you of any changes by posting the new policy on our website.
+            </p>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="footer-container">
@@ -126,6 +168,25 @@
         <p>&copy; 2024 EMERALD GROUP. All rights reserved.</p>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const titles = document.querySelectorAll(".policy-title");
+
+        titles.forEach((title) => {
+          title.addEventListener("click", function () {
+            const content = this.nextElementSibling;
+            const currentlyVisible = content.style.display === "block";
+
+            // Hide all contents
+            document
+              .querySelectorAll(".policy-content")
+              .forEach((c) => (c.style.display = "none"));
+
+            // Toggle the clicked content
+            content.style.display = currentlyVisible ? "none" : "block";
+          });
+        });
+      });
+    </script>
   </body>
 </html>
