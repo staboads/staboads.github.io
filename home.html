@@ -27,8 +27,36 @@
   </head>
   <body>
     <nav-bar-comp currentpage="home"></nav-bar-comp>
-    <p>Place holder text.</p>
-    <p>boop</p>
+
+    <div class="slideshow">
+      <div class="slides">
+        <img src="/images/bannerPics/sample1.png" style="width:100%">
+      </div>
+
+      <div class="slides">
+        <img src="/images/bannerPics/sample2.png" style="width:100%">
+      </div>
+
+      <div class="slides">
+        <img src="/images/bannerPics/sample3.png" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <script src="/js/main.js"></script>
+    </div>
+    <br>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+
+
+
   </body>
 
   <footer-comp></footer-comp>
