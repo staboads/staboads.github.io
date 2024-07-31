@@ -1,5 +1,9 @@
 let slideIndex = 1;
-showSlides(slideIndex);
+let i;
+let slides = document.getElementsByClassName("slides");
+let dots = document.getElementsByClassName("dot");
+
+auto();
 
 function plusSlides(n){
     showSlides(slideIndex += n);
@@ -10,9 +14,6 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("slides");
-    let dots = document.getElementsByClassName("dot");
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     
@@ -24,4 +25,11 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
+}
+
+function auto(){
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    showSlides(slideIndex);
+    selfTimeout(auto, 3000);
 }
