@@ -11,12 +11,18 @@ header{
 
 }
 
+h1, h2, h3 {
+    color: #134542;
+    margin: 16px 0;
+  }
+
 section{
     display: flex;
 }
 
 section p{
     width: 600px;
+    color: #134542;
 }
 
 nav ul {
@@ -112,6 +118,7 @@ header img {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 60%;
+    color: #134542;
 }
 
 h2 {

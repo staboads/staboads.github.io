@@ -13,6 +13,11 @@ header {
     align-items: center;
     justify-content: space-between;
 }
+
+h1, h2 {
+  color: #134542;
+  margin: 16px 0;
+}
   
 nav ul {
     list-style-type: none;
@@ -233,7 +238,7 @@ header > .container {
 #topcolumn {
   display: inline-block;
   width: 45%;
-  height: 345px;
+  height: 370px;
   background:#20c7ae54;
   border-radius: 8px;
   overflow: hidden;
