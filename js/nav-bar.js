@@ -45,10 +45,12 @@ class NavBar extends HTMLElement {
     template.innerHTML = `
           <header>
             <div class="header container">
-              <div class="logo-container">
-                <img src="images/Logo/transparentlogo.png" alt="EMERALD logo " />
-                <h1>EMERALD GROUP</h1>
-              </div>
+              <a href="home.html">
+                <div class="logo-container">
+                  <img src="images/Logo/transparentlogo.png" alt="EMERALD logo " />
+                  <h1>EMERALD GROUP</h1>
+                </div>
+              </a>
   
               <nav>
                 <ul>
