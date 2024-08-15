@@ -175,23 +175,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const questions = document.querySelectorAll(".faq-item .question");
-
-      questions.forEach((question) => {
-        question.addEventListener("click", function () {
-          const answer = this.nextElementSibling;
-          if (answer.style.display === "block") {
-            answer.style.display = "none";
-          } else {
-            answer.style.display = "block";
-          }
-        });
-      });
-    });
-  </script>
-
   <footer-comp></footer-comp>
 </html>
