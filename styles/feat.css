@@ -229,6 +229,8 @@ header > .container {
 }
 
 #topcolumn {
+  padding: 0 16px;
+
   display: inline-block;
   width: 45%;
   height: 370px;
@@ -259,7 +261,7 @@ header > .container {
 
 #botcolumn {
   display: inline-block;
-  width: 20%;
+  width: 22.1%;
   height: 120px;
   margin-top: 4px;
   margin-bottom: 4px;
@@ -300,4 +302,13 @@ p {
 .emerald {
   color: forestgreen;
   font-weight: bold;
+}
+
+main {
+  max-width: 1280px;
+  margin: 32px auto;
+}
+
+main h1 {
+  font-size: 24px;
 }

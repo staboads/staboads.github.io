@@ -92,9 +92,7 @@ header img {
 .faq {
   width: 90%;
   max-width: 800px;
-  margin-left: 0.5%;
-  margin-bottom: 0.5%;
-  margin-top: 0.5%;
+  margin: 0.5% auto 0.5% auto;
   background-color: #e6ecea;
   padding: 20px;
   border-radius: 8px;
