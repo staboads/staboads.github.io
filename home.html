@@ -3,7 +3,6 @@
   <head>
     <title>EMERALD GROUP INCORPORATED</title>
     <meta charset="utf-8" />
-    <meta charset="utf-8" />
     <meta name="author" content="ROQEEB , SEBASTIAN, WILLIAM" />
     <meta name="keywords" content="HTML, CSS, Web Design" />
     <script src="js/cookies.js"></script>
@@ -19,6 +18,7 @@
     />
     <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
     <link rel="stylesheet" href="styles/style.css" type="text/css" />
+    <link rel="stylesheet" href="styles/home.css" type="text/css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -30,15 +30,15 @@
 
     <div class="slideshow">
       <div class="slides">
-        <img src="/images/bannerPics/festivalbanner.png" style="width:100%">
+        <img src="/images/bannerPics/festivalbanner.png" style="width: 100%" />
       </div>
 
       <div class="slides">
-        <img src="/images/bannerPics/bojanglebanner.png" style="width:100%">
+        <img src="/images/bannerPics/bojanglebanner.png" style="width: 100%" />
       </div>
 
       <div class="slides">
-        <img src="/images/bannerPics/contactbanner.png" style="width:100%">
+        <img src="/images/bannerPics/contactbanner.png" style="width: 100%" />
       </div>
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -50,16 +50,113 @@
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
 
+      <section class="popular-styles">
+        <h3>Popular styles</h3>
+        <div class="styles-grid">
+          <div class="style-item">
+            <img src="abstract.jpg" alt="Abstract" />
+            <p>Abstract</p>
+            <span>Expressive and unconventional</span>
+          </div>
+          <div class="style-item">
+            <img src="illustration.jpg" alt="Illustration" />
+            <p>Illustration</p>
+            <span>Hand-drawn art and paintings</span>
+          </div>
+          <div class="style-item">
+            <img src="portraits.jpg" alt="Portraits" />
+            <p>Portraits</p>
+            <span>Realistic and stylized human portraits</span>
+          </div>
+          <div class="style-item">
+            <img src="digital.jpg" alt="Digital" />
+            <p>Digital</p>
+            <span>Art produced using digital tools</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-artists">
+        <h3>Featured Artists</h3>
+
+        <div id="artists-grid" class="artists-grid"></div>
+      </section>
       <script src="/js/main.js"></script>
     </div>
-    <br>
-
-
-
-
-
-
+    <br />
   </body>
 
   <footer-comp></footer-comp>
+
+  <script>
+    function loadImages() {
+      const images = [
+        {
+          src: "/images/artist_1.webp",
+          name: "Elena S.",
+          description: "Abstract - $120 - $800",
+        },
+        {
+          src: "/images/artist_2.webp",
+          name: "Samantha L.",
+          description: "Illustration - $80 - $300",
+        },
+        {
+          src: "/images/artist_3.webp",
+          name: "Pablo G.",
+          description: "Portraits - $150 - $500",
+        },
+        {
+          src: "/images/artist_4.webp",
+          name: "Luna M.",
+          description: "Digital - $100 - $400",
+        },
+        {
+          src: "/images/artist_5.webp",
+          name: "Kai Z.",
+          description: "Illustration - $70 - $200",
+        },
+        {
+          src: "/images/artist_6.webp",
+          name: "Jamie P.",
+          description: "Abstract - $90 - $250",
+        },
+        {
+          src: "/images/artist_7.webp",
+          name: "Alex R.",
+          description: "Surreal - $110 - $450",
+        },
+        {
+          src: "/images/artist_8.webp",
+          name: "Maria T.",
+          description: "Contemporary - $200 - $1000",
+        },
+        {
+          src: "/images/artist_9.webp",
+          name: "John D.",
+          description: "Modern - $130 - $600",
+        },
+        {
+          src: "/images/artist_10.webp",
+          name: "Ana C.",
+          description: "Classic - $50 - $300",
+        },
+      ];
+
+      const gallery = document.getElementById("artists-grid");
+      images.forEach((artist) => {
+        const artistsContent = document.createElement("div");
+        artistsContent.classList.add("artist-item");
+        artistsContent.innerHTML = `
+            <img src="${artist.src}" alt="${artist.name}" />
+            <p>${artist.name}</p>
+            <span>${artist.description}</span>
+        `;
+
+        gallery.appendChild(artistsContent);
+      });
+    }
+
+    window.onload = loadImages;
+  </script>
 </html>

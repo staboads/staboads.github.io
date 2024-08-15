@@ -8,18 +8,25 @@
     <meta name="keywords" content="HTML, CSS, Web Design" />
     <meta name="description" content="Home Page " />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="js/footer.js"></script>
-    <script src="js/nav-bar.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="styles/about.css" type="text/css" />
     <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
-    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/Logo/transparentlogo.png"
+    />
   </head>
   <body>
     <nav-bar-comp currentpage="about"></nav-bar-comp>
 
-    <div class="container">
-      <h1>About Us</h1>
-      <section class="mission-vision">
+    <main class="container my-5">
+      <h1 class="text-center mb-5">About Us</h1>
+      <section class="mission-vision mb-5">
         <h2>Our Mission</h2>
         <p>
           Our mission is to empower and connect talented individuals with
@@ -43,7 +50,7 @@
           achievements, and make a lasting impact on the world.
         </p>
       </section>
-      <section class="about">
+      <section class="about mb-5">
         <h2>Our Story</h2>
         <p>
           At our talent management agency, we believe that every individual has
@@ -75,11 +82,16 @@
           chance to shine and contribute to a better world.
         </p>
       </section>
-      <section class="team">
+      <section class="team mb-5">
         <h2>Meet the Team</h2>
-        <div class="team-member">
-          <img src="images/general/CEO EMERALD GROUP.jpg" alt="CEO" />
-          <div class="member-info">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img
+              src="images/general/CEO EMERALD GROUP.jpg"
+              alt="CEO"
+              class="rounded-circle mb-3"
+              style="width: 150px; height: 150px"
+            />
             <h3>John Doe</h3>
             <p>CEO & Founder</p>
             <p>
@@ -88,10 +100,13 @@
               full potential.
             </p>
           </div>
-        </div>
-        <div class="team-member">
-          <img src="images/general/talent manager.jpg" alt="Talent Manager" />
-          <div class="member-info">
+          <div class="col-md-4 text-center">
+            <img
+              src="images/general/talent manager.jpg"
+              alt="Talent Manager"
+              class="rounded-circle mb-3"
+              style="width: 150px; height: 150px"
+            />
             <h3>Jayden Smith</h3>
             <p>Talent Manager</p>
             <p>
@@ -99,12 +114,16 @@
               that our clients have access to the best opportunities available.
             </p>
           </div>
-        </div>
-        <div class="team-member">
-          <img src="images/general/Emily-Johnson.jpg" alt="Team Member" />
-          <div class="member-info">
-            <h3>Emily Johnson</h3>
-            <p>Team Member</p>
+
+          <div class="col-md-4 text-center">
+            <img
+              src="images/general/Emily-Johnson.jpg"
+              alt="Team Member"
+              class="rounded-circle mb-3"
+              style="width: 150px; height: 150px"
+            />
+            <h3>Mimi Marfo</h3>
+            <p>Best Artist</p>
             <p>
               Emily is dedicated to providing exceptional support to our clients
               and helping them navigate their career paths.
@@ -112,8 +131,10 @@
           </div>
         </div>
       </section>
-    </div>
+    </main>
 
     <footer-comp></footer-comp>
+    <script src="js/footer.js"></script>
+    <script src="js/nav-bar.js"></script>
   </body>
 </html>

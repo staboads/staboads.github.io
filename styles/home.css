@@ -1,0 +1,78 @@
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f1f1f1;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero .search-bar {
+  display: inline-block;
+}
+
+.hero .search-bar input[type="text"] {
+  padding: 12px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.hero .search-bar button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.popular-styles,
+.featured-artists {
+  padding: 40px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.popular-styles h3,
+.featured-artists h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.styles-grid,
+.artists-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.style-item,
+.artist-item {
+  text-align: center;
+}
+
+.style-item img,
+.artist-item img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.style-item p,
+.artist-item p {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.style-item span,
+.artist-item span {
+  font-size: 14px;
+  color: #777;
+}
