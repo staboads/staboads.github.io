@@ -10,6 +10,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100000;
 }
 
 nav ul {
@@ -147,16 +150,24 @@ header > .container {
 }
 
 .slideshow {
+  background-color: white;
   max-width: 1000px;
-  position: relative;
+  transform: translateY(-50%);
   margin: auto;
 }
 
 .slides {
   display: none;
+  margin: auto;
+  border-radius: 16px;
 }
 
-.prev, .next {
+.slides img {
+  width: 100%;
+}
+
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -176,7 +187,8 @@ header > .container {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: #134542;
 }
 
@@ -191,7 +203,8 @@ header > .container {
   transition: background-color 0.5s ease;
 }
 
-.active, .dot:hover{
+.active,
+.dot:hover {
   background-color: #134542;
 }
 
@@ -201,10 +214,10 @@ header > .container {
 }
 
 @keyframes fade {
-  from{
-    opacity: .4;
+  from {
+    opacity: 0.4;
   }
-  to{
+  to {
     opacity: 1;
   }
 }

@@ -5,10 +5,6 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-header {
-  background-color: #134542;
-}
-
 .logo {
   width: 50px;
 }
@@ -47,6 +43,10 @@ footer a:hover {
 .about,
 .team {
   margin-bottom: 20px;
+}
+
+.team h2 {
+  margin-bottom: 32px;
 }
 
 .team-member {
