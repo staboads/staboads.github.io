@@ -3,7 +3,6 @@
   <head>
     <title>EMERALD GROUP INCORPORATED</title>
     <meta charset="utf-8" />
-    <meta charset="utf-8" />
     <meta name="author" content="ROQEEB , SEBASTIAN, WILLIAM" />
     <meta name="keywords" content="HTML, CSS, Web Design" />
     <meta name="description" content="Home Page " />
@@ -178,16 +177,13 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const questions = document.querySelectorAll(".faq-item .question");
+      const questions = document.querySelectorAll(".faq-item");
 
       questions.forEach((question) => {
         question.addEventListener("click", function () {
           const answer = this.nextElementSibling;
-          if (answer.style.display === "block") {
-            answer.style.display = "none";
-          } else {
-            answer.style.display = "block";
-          }
+          answer.style.display =
+            answer.style.display === "block" ? "none" : "block";
         });
       });
     });
