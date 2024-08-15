@@ -1,0 +1,118 @@
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f1f1f1;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero .search-bar {
+  display: inline-block;
+}
+
+.hero .search-bar input[type="text"] {
+  padding: 12px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.hero .search-bar button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.popular-styles,
+.featured-artists {
+  padding: 40px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.popular-styles h3,
+.featured-artists h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.artists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+}
+
+.arts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  gap: 24px;
+}
+
+.art-item img {
+  width: 275px;
+  height: 275px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.style-item,
+.artist-item {
+  text-align: center;
+}
+
+.style-item img,
+.artist-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.style-item p,
+.artist-item p {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.style-item span,
+.artist-item span {
+  font-size: 14px;
+  color: #777;
+}
+
+.emerald-banner {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  background-image: url("../images/bannerPics/emeraldbanner.png");
+  background-position: 0 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.images-block {
+  max-width: 1000px;
+  transform: translateY(-100px);
+  margin: auto;
+}
+
+@media (max-width: 1280px) {
+  .emerald-banner {
+    background-position: 0%;
+    width: auto;
+    height: 30vh;
+  }
+}
