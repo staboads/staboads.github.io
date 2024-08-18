@@ -1,0 +1,60 @@
+{
+  "associates": [
+    {
+      "name": "Adobe",
+      "image": "adobe.svg"
+    },
+    {
+      "name": "Airbnb",
+      "image": "airbnb.svg"
+    },
+    {
+      "name": "Apple",
+      "image": "apple.svg"
+    },
+    {
+      "name": "BMW",
+      "image": "bmw.svg"
+    },
+    {
+      "name": "Byte",
+      "image": "byte.svg"
+    },
+    {
+      "name": "Creative Cloud",
+      "image": "creative-cloud.svg"
+    },
+    {
+      "name": "Ethereum",
+      "image": "ethereum.svg"
+    },
+    {
+      "name": "Facebook",
+      "image": "facebook.svg"
+    },
+    {
+      "name": "Forbes",
+      "image": "forbes.svg"
+    },
+    {
+      "name": "Google",
+      "image": "google.svg"
+    },
+    {
+      "name": "McDonald's",
+      "image": "mcdonald.svg"
+    },
+    {
+      "name": "Nashville",
+      "image": "nashville.svg"
+    },
+    {
+      "name": "Silver",
+      "image": "silver.svg"
+    },
+    {
+      "name": "SoundCloud",
+      "image": "soundcloud.svg"
+    }
+  ]
+}

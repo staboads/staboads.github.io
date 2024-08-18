@@ -3,7 +3,6 @@
   <head>
     <title>EMERALD GROUP INCORPORATED</title>
     <meta charset="utf-8" />
-    <meta charset="utf-8" />
     <meta name="author" content="ROQEEB , SEBASTIAN, WILLIAM" />
     <meta name="keywords" content="HTML, CSS, Web Design" />
     <meta name="description" content="Home Page " />
@@ -13,12 +12,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/normalize.css" type="text/css" />
     <link rel="stylesheet" href="styles/associates.css" type="text/css" />
-    <link rel="icon" type="image/x-icon" href="images/Logo/transparentlogo.png" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/Logo/transparentlogo.png"
+    />
   </head>
   <body>
     <nav-bar-comp currentpage="associates"></nav-bar-comp>
@@ -28,41 +31,25 @@
         <div id="image-grid" class="image-grid"></div>
       </section>
     </main>
-  </body>
 
-  <footer-comp></footer-comp>
+    <footer-comp></footer-comp>
 
-  <script>
-    function loadImages() {
-      const images = [
-        "adobe.svg",
-        "airbnb.svg",
-        "apple.svg",
-        "bmw.svg",
-        "byte.svg",
-        "creative-cloud.svg",
-        "ethereum.svg",
-        "facebook.svg",
-        "forbes.svg",
-        "google.svg",
-        "mcdonald.svg",
-        "nashville.svg",
-        "silver.svg",
-        "soundcloud.svg",
-        "twitter.svg",
-      ];
-
-      const gallery = document.getElementById("image-grid");
-      images.forEach((image) => {
-        const img = document.createElement("img");
-        img.src = `images/associates/${image}`;
-        img.alt = "Image";
-        img.className = "company-image";
-        gallery.appendChild(img);
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("data/associates.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const gallery = document.getElementById("image-grid");
+            data.associates.forEach((associate) => {
+              const img = document.createElement("img");
+              img.src = `images/associates/${associate.image}`;
+              img.alt = associate.name;
+              img.className = "company-image";
+              gallery.appendChild(img);
+            });
+          })
+          .catch((error) => console.error("Error loading the images:", error));
       });
-    }
-
-    // Chamar a função quando a página carrega
-    window.onload = loadImages;
-  </script>
+    </script>
+  </body>
 </html>
