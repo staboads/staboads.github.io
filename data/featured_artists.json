@@ -1,0 +1,54 @@
+{
+  "featured_artists": [
+    {
+      "src": "/images/artists/artist_1.webp",
+      "name": "Thomas S.",
+      "description": "Abstract - $120 - $800"
+    },
+    {
+      "src": "/images/artists/artist_2.webp",
+      "name": "David.",
+      "description": "Illustration - $80 - $300"
+    },
+    {
+      "src": "/images/artists/artist_3.webp",
+      "name": "Marta S.",
+      "description": "Portraits - $150 - $500"
+    },
+    {
+      "src": "/images/artists/artist_4.webp",
+      "name": "Martin J.",
+      "description": "Digital - $100 - $400"
+    },
+    {
+      "src": "/images/artists/artist_5.webp",
+      "name": "Kai Z.",
+      "description": "Illustration - $70 - $200"
+    },
+    {
+      "src": "/images/artists/artist_11.webp",
+      "name": "Jasmine P.",
+      "description": "Abstract - $90 - $250"
+    },
+    {
+      "src": "/images/artists/artist_7.webp",
+      "name": "Alex R.",
+      "description": "Surreal - $110 - $450"
+    },
+    {
+      "src": "/images/artists/artist_8.webp",
+      "name": "Mario T.",
+      "description": "Contemporary - $200 - $1000"
+    },
+    {
+      "src": "/images/artists/artist_9.webp",
+      "name": "Elena D.",
+      "description": "Modern - $130 - $600"
+    },
+    {
+      "src": "/images/artists/artist_10.webp",
+      "name": "Carl D.",
+      "description": "Classic - $50 - $300"
+    }
+  ]
+}

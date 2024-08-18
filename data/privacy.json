@@ -1,0 +1,39 @@
+{
+  "privacy_policy": [
+    {
+      "title": "Introduction",
+      "icon": "fas fa-lock",
+      "content": "Welcome to our Talent Management Agency. We are committed to protecting your personal data and respecting your privacy. Welcome to Emer If you have any questions or concerns about our policy, or our practices with regards to your personal information, please contact us at <a href=\"About.html\">info@emeraldgroup.com.</a>"
+    },
+    {
+      "title": "What Data We Collect",
+      "icon": "fas fa-user-shield",
+      "content": "We collect personal information that you voluntarily provide to us when you register on the website, express an interest in obtaining information about us or our products and services, when you participate in activities on the website or otherwise when you contact us."
+    },
+    {
+      "title": "How We Use Your Data",
+      "icon": "fas fa-database",
+      "content": "We use personal information collected via our website for a variety of business purposes described below. We process your personal information for these purposes in reliance on our legitimate business interests, in order to enter into or perform a contract with you, with your consent, and/or for compliance with our legal obligations."
+    },
+    {
+      "title": "Sharing Your Data",
+      "icon": "fas fa-share-alt",
+      "content": "We do not sell or trade your personal information. We may share data with trusted third parties to assist us in operating our website and conducting our business. We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations."
+    },
+    {
+      "title": "Your Privacy Rights",
+      "icon": "fas fa-user-secret",
+      "content": "You have the right to access, correct, or delete your personal information. Contact us if you have any concerns about your data."
+    },
+    {
+      "title": "Security Measures",
+      "icon": "fas fa-shield-alt",
+      "content": "We implement a variety of security measures to maintain the safety of your personal information."
+    },
+    {
+      "title": "Changes to This Policy",
+      "icon": "fas fa-clipboard-list",
+      "content": "We may update our privacy policy from time to time. We will notify you of any changes by posting the new policy on our website."
+    }
+  ]
+}
